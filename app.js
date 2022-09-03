@@ -1,13 +1,10 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
 
-//Escuchando
+//server escuchado puerto 3000
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}`);
+});
 
-
-
-app.use('/', require('./routes/routesUpload'));
-
+app.use("/", require("./routes/routesUpload"));
