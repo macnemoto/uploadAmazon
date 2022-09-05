@@ -7,9 +7,10 @@ const productSchema = new Schema({
   description: String,
   price:{
     type: Number,
-    default: 0
+    default: 0,
   }
-  });
+  })
+ 
 
 
 module.exports = model('Product', productSchema)
